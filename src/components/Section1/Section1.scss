@@ -1,0 +1,154 @@
+@import '../../assets/scss/Variable.scss';
+
+.Section1 {
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 70px;
+    padding-top: 90px;
+
+    @media screen and (max-width: 576px) {
+        padding-bottom: 45px;
+    }
+
+    .row {
+        align-items: center;
+        padding-top: 50px;
+
+        @media screen and (max-width: 768px) {
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: 576px) {}
+
+        .infocontainer {
+            @media screen and (max-width: 576px) {
+                padding: 15px 10px;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                color: $black;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+                @media screen and (max-width: 385px) {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                span {
+                    @include txtmain;
+                }
+            }
+
+            h5 {
+
+                font-size: 19px;
+                color: $gray;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                padding-right: 80px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 15px;
+                    padding-right: 20px;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width: 385px) {
+                    font-size: 12px;
+                }
+            }
+
+            #get-bids-btn {
+                @include btn-main;
+                margin-top: 20px;
+
+                @media screen and (min-width: 768px) {
+                    margin-right: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    height: 50px;
+                    font-size: 16px;
+                    width: 150px;
+                    margin-right: 10px;
+                }
+
+                @media screen and (max-width: 385px) {
+                    height: 40px;
+                    width: 120px;
+                    font-size: 14px;
+                }
+            }
+
+            #get-bids-btn:hover {
+                background: transparent;
+                @include txtmain;
+                border: 2px solid $bordermain;
+            }
+
+            #bid-on-job-btn {
+                @include btn-outline;
+                margin-top: 20px;
+
+                @media screen and (max-width: 768px) {
+                    height: 50px;
+                    font-size: 16px;
+                    width: 150px;
+                }
+
+                @media screen and (max-width: 666px) {
+                    margin-top: 10px;
+
+                }
+                @media screen and (max-width: 385px) {
+                    height: 40px;
+                    width: 120px;
+                    font-size: 14px;
+                }
+
+            }
+
+            #bid-on-job-btn:hover {
+                background: $background;
+                border: none;
+                -webkit-text-fill-color: white;
+            }
+        }
+
+        .imagecontainer {
+            display: flex;
+            justify-content: flex-end;
+
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 576px) {}
+
+            img {
+                height: 450px;
+                width: 300px;
+                border-radius: 15px;
+
+                @media screen and (max-width: 768px) {
+                    height: 80%;
+                    width: 80%;
+                }
+
+                @media screen and (max-width: 576px) {
+                    height: 100%;
+                    width: 100%;
+                }
+
+
+            }
+        }
+    }
+}

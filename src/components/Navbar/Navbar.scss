@@ -1,0 +1,171 @@
+@import '../../assets/scss/color.scss';
+@import '../../assets/scss/Variable.scss';
+
+
+.Navbar1 {
+    width: 100%;
+    position: fixed !important;
+    z-index: 9;
+    background-color: $white;
+    box-shadow: #cec3c3 0px -5px 11px -1px, rgba(0, 0, 0, 0.06) 0px 5px 4px -1px;
+
+
+
+
+
+    .container {
+        padding: 12px 25px !important;
+
+        @media screen and (min-width: 1020px) {
+            justify-content: start !important;
+            position: relative;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 11px 15px !important;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 5px 5px !important;
+        }
+
+
+
+        #navlogo {
+            height: 31px;
+            width: 165px;
+
+            @media screen and (max-width: 576px) {
+                height: 25px;
+                width: 120px;
+            }
+
+            @media screen and (max-width: 385px) {
+                height: 21px;
+                width: 108px;
+            }
+        }
+
+        .navoptions {
+            display: -webkit-box;
+
+            .navbar-toggler-icon {
+                
+                @media screen and (max-width: 576px) {
+                height: 25px;
+            }
+            }
+
+            .navbar-collapse {
+                @media screen and (max-width: 992px) {
+                    position: absolute;
+                    top: 66px;
+                    width: 100vw;
+                    padding: 15px;
+                    left: 0;
+                    background-color: $white;
+
+
+                }
+
+                @media screen and (max-width: 576px) {
+                    top: 58px;
+                }
+            }
+
+            .nav1 {
+                gap: 22px;
+                max-height: 100% !important;
+
+                @media screen and (max-width: 1200px) {
+                    gap: 15px;
+                }
+
+
+                .nav-link {
+                    color: $black;
+                    font-size: 14px;
+
+                    :hover {
+                        color: rgb(99, 98, 98);
+                    }
+
+                    :active {
+                        @include txtmain;
+                    }
+                }
+
+                .dropdown-item:hover {
+                    color: $white;
+                    background: $background;
+                }
+
+
+            }
+
+            .btncontainer {
+                display: flex;
+                align-items: center;
+
+                @media screen and (min-width: 1020px) {
+                    position: absolute;
+                    right: 10px;
+                }
+
+                #login {
+
+                    font-size: 13px;
+                    font-weight: 400;
+
+                    @media screen and (max-width: 992px) {
+                        height: 40px;
+                        width: 100px;
+                        border: 2px solid $bordermain;
+                        margin: 0px 5px;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        height: 35px;
+                        width: 60px;
+                        font-size: 11px;
+                    }
+                }
+
+                #signup {
+                    height: 33px;
+                    width: 99px;
+                    background: $background;
+                    border: none;
+                    white-space: nowrap;
+                    text-align: center;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 400;
+
+
+
+                    @media screen and (max-width: 992px) {
+                        height: 40px;
+                        width: 100px;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        height: 35px;
+                        width: 60px;
+                        font-size: 11px;
+                    }
+                }
+
+                
+            }
+
+        }
+    }
+
+
+
+}
+
+.custom-dropdown .dropdown-toggle::after {
+    display: none;
+}

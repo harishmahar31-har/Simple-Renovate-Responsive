@@ -1,0 +1,120 @@
+@import '../../assets/scss/Variable.scss';
+
+.Section4 {
+
+    padding: 40px 0px;
+
+    @media screen and (max-width: 991px) {
+        padding: 10px 0px;
+    }
+
+    .infocontainer4 {
+        h3 {
+            font-size: 25px;
+            font-weight: 700;
+            color: $black;
+            text-align: center;
+            margin-top: 20px;
+
+            @media screen and (max-width: 576px) {
+                margin-top: 0px;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            @include txtmain;
+            font-size: 16px;
+            margin-top: 22px;
+            text-align: center;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 576px) {
+                margin-bottom: 0px;
+                margin-top: 8px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .specialitycardcontainer4 {
+        margin-top: 70px;
+
+        @media screen and (max-width: 576px) {
+            margin-top: 20px;
+
+        }
+
+        .col-md-3 {
+            @media screen and (max-width: 576px) {
+                margin-bottom: 20px;
+
+            }
+
+            .specialitycard {
+                padding: 20px;
+                height: 100%;
+
+                @media screen and (max-width: 576px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 15px;
+                    background-color: rgba(235, 236, 236, 0.349);
+                    border-radius: 10px;
+                }
+
+                img {
+                    height: 80px;
+                    width: 80px;
+
+                    @media screen and (max-width: 576px) {
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+
+                h6 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: black;
+                    margin-top: 5px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-align: center;
+                        margin-top: 0px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $gray;
+                    margin-top: 5px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 10px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .active {
+                padding: 19px;
+                border: 1px solid $bordermain;
+                border-radius: 15px;
+
+                h6 {
+                    @include txtmain;
+                }
+
+                @media screen and (max-width: 576px) {
+                    padding: 14px;
+                }
+            }
+        }
+    }
+
+}

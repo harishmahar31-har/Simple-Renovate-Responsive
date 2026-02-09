@@ -1,0 +1,185 @@
+@import '../../assets/scss/Variable.scss';
+
+.Section2 {
+    padding: 70px 0;
+
+    @media screen and (max-width: 991px) {
+        padding: 40px 0;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 40px 0;
+    }
+
+    .infocontainer2 {
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            color: $black;
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+                font-weight: 700;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 28px;
+                font-weight: 700;
+
+                br {
+                    display: none
+                }
+            }
+
+            @media screen and (max-width: 385px) {
+                font-size: 21px;
+                font-weight: 700;
+            }
+
+            span {
+                @include txtmain;
+            }
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 19px;
+            color: $gray;
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .specialitycardcontainer {
+        margin-top: 40px !important;
+
+        @media screen and (max-width: 991px) {
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin-top: 20px;
+        }
+
+        .col-md-3 {
+            @media screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
+
+            .specialitycard {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                height: 100%;
+
+                @media screen and (max-width: 768px) {
+                    padding: 15px;
+                    background-color: rgba(235, 236, 236, 0.349);
+                    border-radius: 10px;
+                }
+
+                img {
+                    height: 70px;
+                    width: 70px;
+
+                    @media screen and (max-width: 992px) {
+                        height: 65px;
+                        width: 65px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        height: 55px;
+                        width: 55px;
+                    }
+                }
+
+                h6 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $black;
+                    margin-top: 5px;
+                    text-align: center;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $gray;
+                    text-align: center;
+                    margin-top: 5px;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 10px;
+                        font-weight: 500;
+                        margin-top: 1px;
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    .btncontainer {
+        display: flex;
+        justify-content: center;
+
+        #get-bids-btn {
+            @include btn-main;
+
+            @media screen and (max-width: 576px) {
+                height: 50px;
+                font-size: 16px;
+                width: 150px;
+            }
+
+            @media screen and (max-width: 385px) {
+                height: 40px;
+                width: 120px;
+                font-size: 14px;
+            }
+        }
+
+        #get-bids-btn:hover {
+            background: transparent;
+            @include txtmain;
+            border: 2px solid $bordermain;
+        }
+
+        #bid-on-job-btn {
+            @include btn-outline;
+
+            @media screen and (max-width: 576px) {
+                height: 50px;
+                font-size: 16px;
+                width: 150px;
+            }
+
+            @media screen and (max-width: 385px) {
+                height: 40px;
+                width: 120px;
+                font-size: 14px;
+            }
+        }
+
+        #bid-on-job-btn:hover {
+            background: $background;
+            border: none;
+            -webkit-text-fill-color: white;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+@import '../../assets/scss/Variable.scss';
+
+.Section3 {
+    overflow: hidden;
+    padding-top: 100px;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-top: 0px;
+    }
+
+    @media screen and (min-width: 992px) {
+        height: 800px;
+
+
+    }
+
+    .maincontainer3 {
+        position: relative;
+
+        .path-svg {
+            position: absolute;
+            top: -220px;
+            left: 0;
+            width: 100%;
+            filter: drop-shadow(rgba(0, 0, 0, 0.5) 4px 10px 5px);
+
+            @media screen and (max-width: 1200px) {
+                width: 85%;
+            }
+
+            @media screen and (max-width: 992px) {
+                display: none;
+
+            }
+
+            img {
+                transform: none;
+                transform-origin: 50% 50%;
+                transform-box: fill-box;
+            }
+        }
+
+        #bgimg {
+            height: 750px;
+            width: 750px;
+            position: absolute;
+            right: -250px;
+            top: -100px;
+            z-index: -1;
+
+            @media screen and (max-width: 992px) {
+                display: none;
+
+            }
+        }
+
+        .infocontainer3 {
+
+            h6 {
+                font-size: 16px;
+                font-weight: 500;
+                padding: 5px;
+                color: $bordermain;
+                margin-bottom: 10px;
+                flex-wrap: nowrap;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+
+            h2 {
+                font-size: 25px;
+                font-weight: 700;
+                color: $black;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 20px;
+                    padding-left: 5px;
+                }
+            }
+
+            p {
+                font-size: 19px;
+                color: $gray;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 17px;
+                    padding-left: 5px;
+                }
+                @media screen and (max-width: 385px) {
+                    font-size: 14px;
+                    padding-left: 5px;
+                }
+            }
+
+            .btncontainer3 {
+                @media screen and (max-width: 576px) {
+                    padding-left: 5px;
+                }
+
+                #get-bids-btn {
+                    position: absolute;
+                    z-index: 1;
+                    @include btn-main;
+
+                    @media screen and (max-width: 576px) {
+                        height: 50px;
+                        font-size: 16px;
+                        width: 150px;
+                        justify-self: center;
+                    }
+
+                    @media screen and (max-width: 385px) {
+                        height: 40px;
+                        width: 120px;
+                        font-size: 14px;
+                    }
+                }
+
+                #get-bids-btn:hover {
+                    background: transparent;
+                    @include txtmain;
+                    border: 2px solid $bordermain;
+                }
+            }
+        }
+
+        .cardcontainer3 {
+
+            margin: 30px 0px;
+            margin-top: 90px;
+
+            @media screen and (max-width: 576px) {
+                margin-bottom: 10px;
+            }
+
+            .col-md-4 {
+                display: flex;
+                justify-content: center;
+
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 20px;
+                }
+
+                .card {
+                    background: transparent;
+                    padding: 10px;
+                    border-radius: 25px;
+                    height: auto;
+                    border: none;
+                    width: 78%;
+
+                    @media screen and (min-width: 992px) {
+                        position: absolute;
+                        width: 300px;
+
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        border: 1px solid $bordermain;
+                        border-radius: 10px;
+                        width: 100%;
+                        padding: 20px;
+                    }
+
+                    img {
+                        height: 25px;
+                        width: 25px;
+
+                        @media screen and (max-width: 576px) {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black;
+                        margin: 5px 0px;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 15px;
+                            margin: 10px 0px;
+                        }
+                    }
+
+                    p {
+                        font-size: 11px;
+                        color: $gray;
+                        margin-bottom: 10px;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .count {
+                        color: rgb(226, 225, 225);
+                        font-size: 130px;
+                        font-weight: 700;
+                        z-index: -1;
+                        position: absolute;
+                        top: -90px;
+                        left: 190px;
+
+                        @media screen and (max-width: 992px) {
+                            display: none;
+
+                        }
+                    }
+                }
+
+                .card1 {
+
+                    @media screen and (min-width: 1200px) {
+                        top: 490px;
+                        left: 70px;
+                    }
+
+                    @media screen and (min-width: 992px) and (max-width: 1199px) {
+                        top: 490px;
+                        left: 40px;
+
+                    }
+                }
+
+                .card2 {
+
+
+                    @media screen and (min-width: 1200px) {
+                        top: 270px;
+                        left: 540px;
+                    }
+
+                    @media screen and (min-width: 992px) and (max-width: 1199px) {
+                        top: 290px;
+                        left: 360px;
+
+                    }
+                }
+
+                .card3 {
+
+
+                    @media screen and (min-width: 1200px) {
+                        top: 80px;
+                        left: 890px;
+                    }
+
+
+                    @media screen and (min-width: 992px) and (max-width: 1199px) {
+                        top: 100px;
+                        left: 670px;
+
+                    }
+                }
+            }
+        }
+    }
+}

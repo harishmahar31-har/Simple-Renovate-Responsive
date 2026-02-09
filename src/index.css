@@ -1,0 +1,16 @@
+@import './components/Navbar/Navbar.scss';
+@import './components/Section1/Section1.scss';
+@import './components/Section2/Section2.scss';
+@import './components/Section3/Section3.scss';
+@import './components/Section4/Section4.scss';
+@import './components/Section5/Section5.scss';
+@import './components/Sectionfooter/Sectionfooter.scss';
+
+.container{
+    @media screen and (min-width: 1200px) {
+        max-width: 1212px !important;
+    }
+    @media screen and (max-width: 1200px) {
+        max-width: 1070px !important;
+    }
+}

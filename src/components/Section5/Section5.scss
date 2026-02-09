@@ -1,0 +1,157 @@
+@import '../../assets/scss/Variable.scss';
+
+.Section5 {
+    padding: 40px 0px;
+    border-bottom: 4px solid $bordermain;
+    
+    @media screen and (max-width: 991px) {
+        padding: 20px 0px;
+    }
+    .infocontainer5 {
+        h6 {
+            font-size: 13px;
+            font-weight: 700;
+            background-color: rgb(252, 229, 229);
+            padding: 5px 10px;
+            justify-self: center;
+            color: $bordermain;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            flex-wrap: nowrap;
+
+            @media screen and (max-width: 576px) {
+                font-size: 11px;
+                font-weight: 600;
+            }
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            color: $black;
+            text-align: center;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 576px) {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            color: $gray;
+            text-align: center;
+            margin-bottom: 80px;
+
+            @media screen and (max-width: 576px) {
+                margin-bottom: 50px;
+                font-size: 13px;
+            }
+            br{
+                display: none;
+            }
+        }
+    }
+
+    .cardcontainer5 {
+
+        .col-md-4 {
+            margin-bottom: 35px;
+
+            .card {
+                background-color: white;
+                padding: 30px;
+                border-radius: 25px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                height: 100%;
+                width: 93%;
+                justify-self: center;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                position: relative;
+
+                @media screen and (max-width: 576px) {}
+
+                .koma {
+                    height: 50px;
+                    width: 50px;
+                    position: absolute;
+                    top: -20px;
+                    left: -10px;
+
+                    @media screen and (max-width: 576px) {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+
+
+                p {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $gray;
+                    margin-bottom: 20px;
+                    margin-top: 25px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+
+                .innercard {
+                    display: flex;
+                    align-items: center;
+                    margin: 20px 0px;
+
+                    img {
+                        height: 55px;
+                        width: 55px;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                        background-position: center;
+                    }
+
+                    .innercarddetail {
+                        h5 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: black;
+                        }
+
+                        h6 {
+                            font-size: 13px;
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btncontainer5 {
+        display: flex;
+        justify-content: center;
+
+        #join-customers {
+            @include btn-main;
+            height: 45px;
+            width: 330px;
+
+            @media screen and (max-width: 576px) {
+                height: 40px;
+                width: 215px;
+                font-size: 11px;
+            }
+        }
+
+        #join-customers:hover {
+            background: transparent;
+            @include txtmain;
+            border: 2px solid $bordermain;
+        }
+    }
+}

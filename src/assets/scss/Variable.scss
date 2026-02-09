@@ -1,0 +1,35 @@
+$webkit-fill : #0000;
+$webkit-b-clip : text;
+$background: var(--main);
+$black: var(--black);
+$white: var(--white);
+$gray: var(--gray);
+$bordermain: var(--bordermain);
+$red: var(--red);
+
+
+@mixin txtmain {
+    background: $background;
+    -webkit-background-clip: $webkit-b-clip;
+    -webkit-text-fill-color: $webkit-fill;
+}
+
+@mixin btn-main {
+    font-size: 14px;
+    font-weight: 700;
+    width: 188px;
+    height: 55px;
+    border-radius: 10px;
+    background: $background;
+    border: none;
+}
+
+@mixin btn-outline {
+    @include txtmain;
+    border: 2px solid $bordermain;
+    width: 188px;
+    height: 55px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+}
